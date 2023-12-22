@@ -1,0 +1,6 @@
+[submodule "ext/opencv"]
+	path = ext/opencv
+	url = https://github.com/zspace/system.opencv.4.8.1
+[submodule "ext/opencv.contrib"]
+	path = ext/opencv.contrib
+	url = https://github.com/zspace/system.opencv.contrib.4.8.1

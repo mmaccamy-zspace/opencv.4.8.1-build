@@ -9,8 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{FA
 	ProjectSection(SolutionItems) = preProject
 		..\.gitignore = ..\.gitignore
 		common.props = common.props
+		opencv\opencv.props = opencv\opencv.props
+		opencv\opencv.ruleset = opencv\opencv.ruleset
 		..\README.md = ..\README.md
-		..\res\version.rc = ..\res\version.rc
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opencv_core", "opencv\modules\core\opencv_core.vcxproj", "{E0CEB085-D734-4A12-961B-94F1D6DF7E5E}"

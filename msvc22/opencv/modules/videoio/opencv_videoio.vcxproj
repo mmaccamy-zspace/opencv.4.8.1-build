@@ -90,12 +90,6 @@
     <Lib />
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\libjpeg.vcxproj">
-      <Project>{7d8c63eb-9e18-55a7-913d-0de1bda729a2}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\libpng.vcxproj">
-      <Project>{7d8c63eb-ab18-55a7-913d-0de1bda729a9}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\core\opencv_core.vcxproj">
       <Project>{e0ceb085-d734-4a12-961b-94f1d6df7e5e}</Project>
     </ProjectReference>

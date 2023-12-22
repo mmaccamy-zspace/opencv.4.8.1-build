@@ -886,11 +886,6 @@
     <None Include="..\..\..\..\ext\opencv\modules\core\src\opencl\split_merge.cl" />
     <None Include="..\..\..\..\ext\opencv\modules\core\src\opencl\transpose.cl" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\zlib.vcxproj">
-      <Project>{4d8c63be-9e18-55a7-913d-0de1bda729a2}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

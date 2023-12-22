@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{7A5B38D8-9917-41BE-BA5C-85D3EF5334BA}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_features2d</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>C:\github\zspace\system.next\msvc22\opencv\opencv.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CodeAnalysisRuleSet>C:\github\zspace\system.next\msvc22\opencv\opencv.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProcessorNumber>8</ProcessorNumber>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProcessorNumber>8</ProcessorNumber>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ext\opencv\include\opencv2\features2d.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\include\opencv2\features2d\features2d.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\include\opencv2\features2d\hal\interface.h" />
+    <ClInclude Include="opencl_kernels_features2d.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\agast_score.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\fast.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\fast_score.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\hal_replacement.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\AKAZEConfig.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\AKAZEFeatures.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\fed.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\KAZEConfig.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\KAZEFeatures.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\nldiffusion_functions.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\TEvolution.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\utils.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\precomp.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\features2d\src\sift.simd.hpp" />
+    <ClInclude Include="..\..\cvconfig.h" />
+    <ClInclude Include="..\..\opencv2\opencv_modules.hpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\affine_feature.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\agast.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\agast_score.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\akaze.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\bagofwords.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\blobdetector.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\brisk.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\draw.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\dynamic.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\evaluation.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\fast.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4251;4324;4275;4589;4127</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4251;4324;4275;4589;4127</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\fast_score.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\feature2d.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\gftt.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\AKAZEFeatures.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\fed.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\KAZEFeatures.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze\nldiffusion_functions.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\kaze.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\keypoint.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\main.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\matchers.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\mser.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\orb.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\features2d\src\sift.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="opencl_kernels_features2d.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <None Include="..\..\..\..\ext\opencv\modules\features2d\src\opencl\akaze.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\features2d\src\opencl\brute_force_match.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\features2d\src\opencl\fast.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\features2d\src\opencl\orb.cl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\core\opencv_core.vcxproj">
+      <Project>{e0ceb085-d734-4a12-961b-94f1d6df7e5e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\flann\opencv_flann.vcxproj">
+      <Project>{c901df17-e5c4-4bde-8665-f1e7a08994bf}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\imgproc\opencv_imgproc.vcxproj">
+      <Project>{a22d4398-870b-4d0d-a653-5fd0011c04d9}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

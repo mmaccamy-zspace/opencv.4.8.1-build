@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A22D4398-870B-4D0D-A653-5FD0011C04D9}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_imgproc</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>C:\github\zspace\system.next\msvc22\opencv\opencv.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CodeAnalysisRuleSet>C:\github\zspace\system.next\msvc22\opencv\opencv.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProcessorNumber>8</ProcessorNumber>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProcessorNumber>8</ProcessorNumber>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ext\opencv\include\opencv2\imgproc.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\bindings.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\detail\gcgraph.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\hal\hal.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\hal\interface.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\imgproc.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\imgproc_c.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\segmentation.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\types_c.h" />
+    <ClInclude Include="opencl_kernels_imgproc.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\_geom.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\accum.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\bilateral_filter.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\box_filter.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\ccl_bolelli_forest.inc.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\ccl_bolelli_forest_firstline.inc.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\ccl_bolelli_forest_lastline.inc.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\ccl_bolelli_forest_singleline.inc.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\color.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\color.simd_helpers.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_hsv.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_rgb.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_yuv.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\corner.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\filter.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\filter.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\filterengine.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\fixedpoint.inl.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\hal_replacement.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\imgwarp.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\median_blur.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\morph.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\precomp.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\resize.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\smooth.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\sumpixels.avx512_skx.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\sumpixels.simd.hpp" />
+    <ClInclude Include="..\..\cvconfig.h" />
+    <ClInclude Include="..\..\opencv2\opencv_modules.hpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\accum.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\accum.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\approx.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\bilateral_filter.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\blend.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\box_filter.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\canny.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\clahe.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\color.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_hsv.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_lab.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_rgb.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_yuv.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\colormap.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\connectedcomponents.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\contours.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\convhull.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\corner.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\cornersubpix.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\demosaicing.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\deriv.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\distransform.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\drawing.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\emd.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\featureselect.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\filter.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\floodfill.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\gabor.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\generalized_hough.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\geometry.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\grabcut.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\hershey_fonts.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\histogram.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\hough.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\imgwarp.avx2.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\imgwarp.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\imgwarp.sse4_1.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\intelligent_scissors.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\intersection.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\linefit.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\lsd.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\main.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\matchcontours.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\median_blur.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\min_enclosing_triangle.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\moments.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\morph.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\phasecorr.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\pyramids.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\resize.avx2.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\resize.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\resize.sse4_1.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\rotcalipers.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\samplers.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\segmentation.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\shapedescr.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\smooth.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\spatialgradient.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\subdivision2d.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\sumpixels.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\tables.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\templmatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\thresh.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\utils.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="opencl_kernels_imgproc.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\accumulate.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\bilateral.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\blend_linear.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\boxFilter.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\boxFilter3x3.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\calc_back_project.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\canny.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\clahe.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\color_hsv.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\color_lab.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\color_rgb.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\color_yuv.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\corner.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\covardata.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filter2D.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filter2DSmall.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filterSepCol.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filterSepRow.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filterSep_singlePass.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filterSmall.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\gaussianBlur3x3.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\gaussianBlur5x5.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\gftt.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\histogram.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\hough_lines.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\integral_sum.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\laplacian3.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\laplacian5.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\linearPolar.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\logPolar.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\match_template.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\medianFilter.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\moments.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\morph.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\morph3x3.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\precornerdetect.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\pyramid_up.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\pyr_down.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\pyr_up.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\remap.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\resize.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\sepFilter3x3.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\threshold.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\warp_affine.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\warp_perspective.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\warp_transform.cl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\core\opencv_core.vcxproj">
+      <Project>{e0ceb085-d734-4a12-961b-94f1d6df7e5e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

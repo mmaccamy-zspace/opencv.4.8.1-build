@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{f818ed12-3665-410e-a74c-a90aa748e033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{7724712f-3232-4d0a-b1ac-2503b08fd5d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{6ed50b97-a728-4209-94c6-7ef5b629aaf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl">
+      <UniqueIdentifier>{08a4b587-e6a0-434d-9559-7010533ef2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\aruco">
+      <UniqueIdentifier>{4db5b227-ab19-4daa-85dd-527a5effb1a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\aruco\apriltag">
+      <UniqueIdentifier>{ab99d6dc-c2ca-4549-831a-703709f5c8d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\cascadedetect.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\cascadedetect_convert.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\detection_based_tracker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\face_detect.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\face_recognize.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\hog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\qrcode.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\aruco_board.cpp">
+      <Filter>src\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\aruco_detector.cpp">
+      <Filter>src\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\aruco_dictionary.cpp">
+      <Filter>src\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\aruco_utils.cpp">
+      <Filter>src\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\charuco_detector.cpp">
+      <Filter>src\aruco</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\apriltag_quad_thresh.cpp">
+      <Filter>src\aruco\apriltag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\zmaxheap.cpp">
+      <Filter>src\aruco\apriltag</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\cascadedetect.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\precomp.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\include\opencv2\objdetect\detection_based_tracker.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\include\opencv2\objdetect\face.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\include\opencv2\objdetect\objdetect.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="opencl_kernels_objdetect.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\aruco_utils.hpp">
+      <Filter>src\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\predefined_dictionaries.hpp">
+      <Filter>src\aruco</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\apriltag_quad_thresh.hpp">
+      <Filter>src\aruco\apriltag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\predefined_dictionaries_apriltag.hpp">
+      <Filter>src\aruco\apriltag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\unionfind.hpp">
+      <Filter>src\aruco\apriltag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\zarray.hpp">
+      <Filter>src\aruco\apriltag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\zmaxheap.hpp">
+      <Filter>src\aruco\apriltag</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\ext\opencv\modules\objdetect\src\opencl\cascadedetect.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\objdetect\src\opencl\objdetect_hog.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A12D4389-870B-5DD0-A653-5FD0011C04D9}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_imgcodecs</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>C:\github\zspace\system.next\msvc22\opencv\opencv.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CodeAnalysisRuleSet>C:\github\zspace\system.next\msvc22\opencv\opencv.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProcessorNumber>8</ProcessorNumber>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <WarningLevel>Level4</WarningLevel>
+      <DisableSpecificWarnings>4710;4711;4324</DisableSpecificWarnings>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProcessorNumber>8</ProcessorNumber>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DisableSpecificWarnings>4710;4711;4324</DisableSpecificWarnings>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\include\opencv2\imgcodecs.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs_c.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\bitstrm.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\exif.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmts.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_base.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_bmp.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_gdal.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_gdcm.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_hdr.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_jpeg.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_pam.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_pfm.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_png.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_pxm.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_spng.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\precomp.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\rgbe.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\utils.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\detail\gcgraph.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\hal\hal.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\hal\interface.h" />
+    <ClInclude Include="..\..\cvconfig.h" />
+    <ClInclude Include="..\..\opencv2\opencv_modules.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libjpeg.vcxproj">
+      <Project>{7d8c63eb-9e18-55a7-913d-0de1bda729a2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libpng.vcxproj">
+      <Project>{7d8c63eb-ab18-55a7-913d-0de1bda729a9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\core\opencv_core.vcxproj">
+      <Project>{e0ceb085-d734-4a12-961b-94f1d6df7e5e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\imgproc\opencv_imgproc.vcxproj">
+      <Project>{a22d4398-870b-4d0d-a653-5fd0011c04d9}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\bitstrm.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\exif.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_base.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_bmp.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_gdal.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_gdcm.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_hdr.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_jpeg.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_pam.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_pfm.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_png.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_pxm.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\grfmt_spng.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\loadsave.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\rgbe.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgcodecs\src\utils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

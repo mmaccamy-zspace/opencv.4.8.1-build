@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\ap3p.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\calibinit.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\calibration.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\calibration_handeye.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\checkchessboard.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\chessboard.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\circlesgrid.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\compat_ptsetreg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\dls.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\epnp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\fisheye.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\five-point.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\fundam.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\homography_decomp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\ippe.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\levmarq.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\p3p.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\polynom_solver.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\posit.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\ptsetreg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\quadsubpix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\rho.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\solvepnp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\sqpnp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\stereobm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\stereosgbm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\triangulate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\undistort.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\upnp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\degeneracy.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\dls_solver.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\essential_solver.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\estimator.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\fundamental_solver.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\gamma_values.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\homography_solver.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\local_optimization.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\pnp_solver.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\quality.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\ransac_solvers.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\sampler.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\termination.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\utils.cpp">
+      <Filter>src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="opencl_kernels_calib3d.cpp">
+      <Filter>src\opencl\kernels\autogenerated</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="opencl_kernels_calib3d.hpp">
+      <Filter>src\opencl\kernels\autogenerated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cvconfig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opencv2\opencv_modules.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\include\opencv2\calib3d\calib3d_c.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\include\opencv2\calib3d.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\dls.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\distortion_model.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\chessboard.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\calib3d_c_api.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\ap3p.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\epnp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\fisheye.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\upnp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\undistort.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\sqpnp.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\rho.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\precomp.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\polynom_solver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\p3p.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\ippe.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\circlesgrid.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\ext\opencv\modules\calib3d\src\opencl\stereobm.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{129C6933-272F-3915-A006-88129EA2EDA5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{EAFB9E29-2A12-3733-9298-EFD4D8EF8394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl">
+      <UniqueIdentifier>{40592F2F-5C10-3CD3-88B0-49A8DA4C7A13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl\kernels">
+      <UniqueIdentifier>{B18A7A2D-35DA-3198-9567-4B578E1E0901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl\kernels\autogenerated">
+      <UniqueIdentifier>{18D90B78-EB25-3CA6-8AF1-3B294FD25841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\usac">
+      <UniqueIdentifier>{0A59C713-6DD7-3EC7-A83C-4C3C0820A245}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

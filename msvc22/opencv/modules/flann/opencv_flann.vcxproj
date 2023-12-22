@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{C901DF17-E5C4-4BDE-8665-F1E7A08994BF}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_flann</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>C:\github\zspace\system.next\msvc22\opencv\opencv.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CodeAnalysisRuleSet>C:\github\zspace\system.next\msvc22\opencv\opencv.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProcessorNumber>8</ProcessorNumber>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProcessorNumber>8</ProcessorNumber>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ext\opencv\include\opencv2\flann.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\allocator.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\all_indices.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\any.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\autotuned_index.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\composite_index.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\config.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\defines.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\dist.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\dummy.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\dynamic_bitset.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\flann.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\flann_base.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\general.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\ground_truth.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\hdf5.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\heap.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\hierarchical_clustering_index.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\index_testing.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\kdtree_index.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\kdtree_single_index.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\kmeans_index.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\linear_index.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\logger.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\lsh_index.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\lsh_table.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\matrix.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\miniflann.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\nn_index.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\object_factory.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\params.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\random.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\result_set.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\sampling.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\saving.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\simplex_downhill.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\include\opencv2\flann\timer.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\flann\src\precomp.hpp" />
+    <ClInclude Include="..\..\cvconfig.h" />
+    <ClInclude Include="..\..\opencv2\opencv_modules.hpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\flann\src\flann.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\flann\src\miniflann.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\core\opencv_core.vcxproj">
+      <Project>{e0ceb085-d734-4a12-961b-94f1d6df7e5e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

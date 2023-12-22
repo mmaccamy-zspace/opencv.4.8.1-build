@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{a34487a4-6d66-44f4-a919-4e2a794efce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c7f3ffb6-f5ed-48fd-97e6-c3d57171f951}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jchuff.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcapistd.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcarith.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jccoefct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jaricom.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcapimin.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jquant2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jutils.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jquant1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jmemansi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jmemmgr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jmemnobs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jidctflt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jidctfst.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jidctint.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jfdctflt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jfdctfst.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jfdctint.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdpostct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdsample.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdtrans.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jerror.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdmainct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdmarker.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdmaster.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdmerge.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jddctmgr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdhuff.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdinput.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdatadst.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdatasrc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdcoefct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdcolor.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jctrans.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdapimin.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdapistd.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jdarith.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcparam.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcprepct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcsample.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcinit.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcmainct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcmarker.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcmaster.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcomapi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jccolor.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\opencv\3rdparty\libjpeg\jcdctmgr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ext\opencv\3rdparty\libjpeg\jmorecfg.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ext\opencv\3rdparty\libjpeg\jpegint.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ext\opencv\3rdparty\libjpeg\jpeglib.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ext\opencv\3rdparty\libjpeg\jinclude.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ext\opencv\3rdparty\libjpeg\jmemsys.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ext\opencv\3rdparty\libjpeg\jerror.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ext\opencv\3rdparty\libjpeg\jdct.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ext\opencv\3rdparty\libjpeg\jconfig.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ext\opencv\3rdparty\libjpeg\jversion.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

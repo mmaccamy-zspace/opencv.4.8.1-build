@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{8E4C7C63-C510-44EF-88FA-1A07987B20E3}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_calib3d</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>C:\github\zspace\system.next\msvc22\opencv\opencv.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CodeAnalysisRuleSet>C:\github\zspace\system.next\msvc22\opencv\opencv.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProcessorNumber>8</ProcessorNumber>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProcessorNumber>8</ProcessorNumber>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\include\opencv2\calib3d.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\include\opencv2\calib3d\calib3d_c.h" />
+    <ClInclude Include="opencl_kernels_calib3d.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\calib3d_c_api.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\chessboard.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\circlesgrid.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\fisheye.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\distortion_model.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\precomp.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\ap3p.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\dls.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\epnp.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\ippe.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\p3p.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\polynom_solver.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\rho.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\sqpnp.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\undistort.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\upnp.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac.hpp" />
+    <ClInclude Include="..\..\cvconfig.h" />
+    <ClInclude Include="..\..\opencv2\opencv_modules.hpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\ap3p.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\calibinit.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\calibration.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\calibration_handeye.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\checkchessboard.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\chessboard.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4251;4324;4275;4589;4244;4127</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4251;4324;4275;4589;4244;4127</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\circlesgrid.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\compat_ptsetreg.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\dls.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\epnp.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\fisheye.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\five-point.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\fundam.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\homography_decomp.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\ippe.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\levmarq.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\main.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\p3p.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\polynom_solver.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\posit.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\ptsetreg.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\quadsubpix.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\rho.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\solvepnp.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\sqpnp.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\stereobm.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\stereosgbm.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4251;4324;4275;4589;4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4251;4324;4275;4589;4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\triangulate.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\undistort.dispatch.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\upnp.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\degeneracy.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\dls_solver.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\essential_solver.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\estimator.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\fundamental_solver.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\gamma_values.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\homography_solver.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\local_optimization.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\pnp_solver.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\quality.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\ransac_solvers.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\sampler.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\termination.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\calib3d\src\usac\utils.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="opencl_kernels_calib3d.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">precomp.hpp</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">precomp.hpp</PrecompiledHeaderFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">precomp.hpp</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">precomp.hpp</PrecompiledHeaderFile>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4251;4324;4275;4589;4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4251;4324;4275;4589;4512</DisableSpecificWarnings>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="..\..\..\..\ext\opencv\modules\calib3d\src\opencl\stereobm.cl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\core\opencv_core.vcxproj">
+      <Project>{e0ceb085-d734-4a12-961b-94f1d6df7e5e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\features2d\opencv_features2d.vcxproj">
+      <Project>{7a5b38d8-9917-41be-ba5c-85d3ef5334ba}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\flann\opencv_flann.vcxproj">
+      <Project>{c901df17-e5c4-4bde-8665-f1e7a08994bf}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\imgproc\opencv_imgproc.vcxproj">
+      <Project>{a22d4398-870b-4d0d-a653-5fd0011c04d9}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{7724712f-3232-4d0a-b1ac-2503b08fd5d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{6ed50b97-a728-4209-94c6-7ef5b629aaf3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ext\opencv.contrib\modules\aruco\src\aruco.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv.contrib\modules\aruco\src\aruco_calib.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv.contrib\modules\aruco\src\charuco.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ext\opencv.contrib\modules\aruco\src\precomp.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv.contrib\modules\aruco\include\opencv2\aruco\aruco_calib.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv.contrib\modules\aruco\include\opencv2\aruco\charuco.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv.contrib\modules\aruco\include\opencv2\aruco.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

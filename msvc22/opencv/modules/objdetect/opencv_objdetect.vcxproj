@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\apriltag_quad_thresh.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\zmaxheap.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\aruco_board.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\aruco_detector.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\aruco_dictionary.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\aruco_utils.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\charuco_detector.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\cascadedetect.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\cascadedetect_convert.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\detection_based_tracker.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\face_detect.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\face_recognize.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\hog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\main.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\objdetect\src\qrcode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\include\opencv2\objdetect\detection_based_tracker.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\include\opencv2\objdetect\face.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\include\opencv2\objdetect\objdetect.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\apriltag_quad_thresh.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\predefined_dictionaries_apriltag.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\unionfind.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\zarray.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\apriltag\zmaxheap.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\aruco_utils.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\aruco\predefined_dictionaries.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\cascadedetect.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\objdetect\src\precomp.hpp" />
+    <ClInclude Include="opencl_kernels_objdetect.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\ext\opencv\modules\objdetect\src\opencl\cascadedetect.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\objdetect\src\opencl\objdetect_hog.cl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\calib3d\opencv_calib3d.vcxproj">
+      <Project>{8e4c7c63-c510-44ef-88fa-1a07987b20e3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\features2d\opencv_features2d.vcxproj">
+      <Project>{7a5b38d8-9917-41be-ba5c-85d3ef5334ba}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\imgproc\opencv_imgproc.vcxproj">
+      <Project>{a22d4398-870b-4d0d-a653-5fd0011c04d9}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{8F4A14A7-5178-42E0-B523-E6B07712F7EF}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>opencv_objdetect</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4324;4267;4275;4589;4100;4702;4457;4458</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <ProcessorNumber>8</ProcessorNumber>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;CV_CPU_COMPILE_SSE3=1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions> /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4324;4267;4275;4589;4100;4702;4457;4458</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <ProcessorNumber>8</ProcessorNumber>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;CV_CPU_COMPILE_SSE3=1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions> /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

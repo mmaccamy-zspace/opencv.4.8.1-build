@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{8F4A14A7-5178-42E0-B421-E6B07712F7EF}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>opencv_dnn</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\common.props" />
+    <Import Project="..\..\opencv.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4324;4267;4275;4589;4100;4702;4457;4458</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <ProcessorNumber>8</ProcessorNumber>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;CV_CPU_COMPILE_SSE3=1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions> /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4324;4267;4275;4589;4100;4702;4457;4458</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <ProcessorNumber>8</ProcessorNumber>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;CV_CPU_COMPILE_SSE3=1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions> /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\caffe\caffe_importer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\caffe\caffe_io.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\caffe\caffe_shrinker.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\darknet\darknet_importer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\darknet\darknet_io.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\debug_utils.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\dnn.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\graph_simplifier.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\halide_scheduler.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\ie_ngraph.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\init.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\batch_norm_layer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\convolution_layer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\elementwise_layers.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\eltwise_layer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\fully_connected_layer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\pooling_layer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\quantization_utils.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\reduce_layer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\scale_layer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\softmax_layer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\accum_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\arg_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\batch_norm_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\blank_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\concat_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\const_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\convolution_layer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\correlation_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\crop_and_resize_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\cumsum_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\detection_output_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4251;4324;4267;4275;4589;4100;4702;4457;4458;4018</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4251;4324;4267;4275;4589;4100;4702;4457;4458;4018</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\elementwise_layers.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\eltwise_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\flatten_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\flow_warp_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\fully_connected_layer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\gather_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\layers_common.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\lrn_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\max_unpooling_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\mvn_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\nary_eltwise_layers.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\normalize_bbox_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\not_implemented_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\padding_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\permute_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\pooling_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\prior_box_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\proposal_layer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4251;4324;4267;4275;4589;4100;4702;4457;4458;4018</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4251;4324;4267;4275;4589;4100;4702;4457;4458;4018</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\recurrent_layers.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\reduce_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\region_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\reorg_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\reshape_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\resize_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\scale_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\scatterND_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\scatter_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\shuffle_channel_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\slice_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\softmax_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\split_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\tile_layer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\model.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\nms.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\ocl4dnn\src\common.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\ocl4dnn\src\math_functions.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_conv_spatial.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_inner_product.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_lrn.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_pool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\ocl4dnn\src\ocl4dnn_softmax.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\onnx\onnx_graph_simplifier.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\onnx\onnx_importer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\op_halide.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\op_inf_engine.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\op_vkcom.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\tengine4dnn\src\tengine_graph_convolution.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\tf_graph_simplifier.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\tf_importer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\tf_io.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\torch\THDiskFile.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\torch\THFile.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\torch\THGeneral.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\torch\torch_importer.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4251;4324;4267;4275;4589;4100;4702;4457;4458;4456</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4251;4324;4267;4275;4589;4100;4702;4457;4458;4456</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\avg_pool_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\concat_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\conv48_nobias_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\conv48_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\conv_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\dw_conv_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\lrn_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\max_pool_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\permute_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\prior_box_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\relu_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\softmax_spv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\buffer.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\context.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\internal.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\op_base.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\op_concat.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\op_conv.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\op_lrn.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\op_permute.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\op_pool.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\op_prior_box.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\op_relu.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\op_softmax.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\tensor.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\vulkan\vk_functions.cpp" />
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\vulkan\vk_loader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\include\opencv2\dnn\all_layers.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\include\opencv2\dnn\dict.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\include\opencv2\dnn\dnn.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\include\opencv2\dnn\dnn.inl.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\include\opencv2\dnn\layer.details.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\include\opencv2\dnn\layer.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\include\opencv2\dnn\layer_reg.private.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\include\opencv2\dnn\shape_utils.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\include\opencv2\dnn\utils\debug_utils.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\include\opencv2\dnn\utils\inference_engine.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\include\opencv2\dnn\version.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\caffe\caffe_io.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\caffe\glog_emulator.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\cublas.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\cudnn.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\cudnn\activation.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\cudnn\convolution.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\cudnn\cudnn.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\cudnn\lrn.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\cudnn\pooling.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\cudnn\recurrent.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\cudnn\softmax.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\cudnn\transform.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\cudnn\transpose_convolution.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\error.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\event.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\memory.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\nvcc_defs.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\pointer.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\span.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\stream.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\tensor.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\tensor_ops.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\csl\workspace.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\cxx_utils\is_iterator.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\cxx_utils\resizable_static_array.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\init.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\activations.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\activation_eltwise.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\bias_activation.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\bias_activation_eltwise.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\bias_eltwise_activation.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\concat.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\crop_and_resize.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\detection_output.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\eltwise_activation.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\eltwise_ops.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\fill_copy.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\fp_conversion.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\grid_nms.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\max_unpooling.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\mvn.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\normalize.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\padding.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\permute.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\prior_box.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\region.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\resize.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\roi_pooling.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\scale_shift.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\shortcut.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\kernels\slice.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\activation.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\batch_norm.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\concat.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\const.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\convolution.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\crop_and_resize.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\detection_output.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\eltwise.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\inner_product.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\lrn.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\matmul.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\max_unpooling.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\mvn.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\normalize_bbox.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\padding.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\permute.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\pooling.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\prior_box.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\recurrent_cells.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\region.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\reorg.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\reshape.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\resize.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\roi_pooling.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\scale_shift.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\shortcut.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\shuffle_channel.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\slice.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\softmax.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\split.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda4dnn\primitives\transpose_convolution.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\array.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\atomics.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\bbox_utils.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\block_stride_range.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\execution.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\functors.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\grid_stride_range.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\index_helpers.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\kernel_dispatcher.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\limits.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\math.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\memory.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\types.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\vector_traits.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\darknet\darknet_io.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\dnn_common.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\graph_simplifier.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\halide_scheduler.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\ie_ngraph.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\layers_common.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\int8layers\layers_common.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\layers_common.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\layers\layers_common.simd.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\math_utils.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\nms.inl.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\ocl4dnn\include\common.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\ocl4dnn\include\default_kernel_config.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\ocl4dnn\include\math_functions.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\ocl4dnn\include\ocl4dnn.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\onnx\onnx_graph_simplifier.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\op_cuda.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\op_halide.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\op_inf_engine.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\op_vkcom.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\precomp.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\tengine4dnn\include\tengine_graph_convolution.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\tf_graph_simplifier.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\tf_io.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\torch\THDiskFile.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\torch\THFile.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\torch\THFilePrivate.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\torch\THGeneral.h" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\buffer.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\op_base.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\op_concat.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\op_conv.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\op_lrn.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\op_permute.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\op_pool.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\op_prior_box.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\op_relu.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\op_softmax.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\tensor.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\include\vkcom.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\spv_shader.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\common.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\context.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\src\internal.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\vulkan\function_list.inl.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\vulkan\vk_functions.hpp" />
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\vulkan\vk_loader.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\caffe\opencv-caffe.proto" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\activations.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\activation_eltwise.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\bias_activation.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\bias_activation_eltwise.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\bias_eltwise_activation.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\concat.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\crop_and_resize.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\detection_output.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\eltwise_activation.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\eltwise_ops.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\fill_copy.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\fp_conversion.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\grid_nms.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\max_unpooling.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\mvn.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\normalize.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\padding.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\permute.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\prior_box.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\region.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\resize.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\roi_pooling.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\scale_shift.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\shortcut.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\cuda\slice.cu" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\onnx\opencv-onnx.proto" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\activations.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\batchnorm.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\col2im.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\concat.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\conv_layer_spatial.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\conv_spatial_helper.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\detection_output.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\dummy.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\eltwise.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\gemm_buffer.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\gemm_image.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\im2col.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\lrn.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\math.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\matvec_mul.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\mvn.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\ocl4dnn_lrn.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\ocl4dnn_pooling.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\permute.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\pooling.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\prior_box.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\region.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\slice.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\softmax.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\opencl\softmax_loss.cl" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\attr_value.proto" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\function.proto" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\graph.proto" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\op_def.proto" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\tensor.proto" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\tensor_shape.proto" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\types.proto" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\tensorflow\versions.proto" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\avg_pool.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\concat.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\conv.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\conv48.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\conv48_nobias.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\dw_conv.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\lrn.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\max_pool.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\permute.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\prior_box.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\relu.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\softmax.comp" />
+    <None Include="..\..\..\..\ext\opencv\modules\dnn\src\vkcom\shader\spirv_generator.py" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

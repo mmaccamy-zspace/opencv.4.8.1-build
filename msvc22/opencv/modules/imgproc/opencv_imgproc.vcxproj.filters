@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\accum.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\accum.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\approx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\bilateral_filter.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\blend.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\box_filter.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\canny.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\clahe.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\color.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_hsv.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_lab.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_rgb.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_yuv.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\colormap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\connectedcomponents.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\contours.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\convhull.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\corner.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\cornersubpix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\demosaicing.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\deriv.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\distransform.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\drawing.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\emd.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\featureselect.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\filter.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\floodfill.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\gabor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\generalized_hough.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\geometry.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\grabcut.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\hershey_fonts.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\histogram.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\hough.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\imgwarp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\intelligent_scissors.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\intersection.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\linefit.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\lsd.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\matchcontours.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\median_blur.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\min_enclosing_triangle.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\moments.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\morph.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\phasecorr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\pyramids.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\resize.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\rotcalipers.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\samplers.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\segmentation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\shapedescr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\smooth.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\spatialgradient.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\subdivision2d.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\sumpixels.dispatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\tables.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\templmatch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\thresh.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="opencl_kernels_imgproc.cpp">
+      <Filter>src\opencl\kernels\autogenerated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\imgwarp.avx2.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\imgwarp.sse4_1.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\resize.sse4_1.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\imgproc\src\resize.avx2.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="opencl_kernels_imgproc.hpp">
+      <Filter>src\opencl\kernels\autogenerated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\include\opencv2\imgproc.hpp">
+      <Filter>include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\bindings.hpp">
+      <Filter>include\opencv2\imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\detail\gcgraph.hpp">
+      <Filter>include\opencv2\imgproc\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\hal\hal.hpp">
+      <Filter>include\opencv2\imgproc\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\hal\interface.h">
+      <Filter>include\opencv2\imgproc\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\imgproc.hpp">
+      <Filter>include\opencv2\imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\imgproc_c.h">
+      <Filter>include\opencv2\imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\segmentation.hpp">
+      <Filter>include\opencv2\imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\types_c.h">
+      <Filter>include\opencv2\imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cvconfig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opencv2\opencv_modules.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\_geom.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\accum.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\bilateral_filter.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\box_filter.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\ccl_bolelli_forest.inc.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\ccl_bolelli_forest_firstline.inc.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\ccl_bolelli_forest_lastline.inc.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\ccl_bolelli_forest_singleline.inc.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\color.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\color.simd_helpers.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_hsv.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_rgb.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\color_yuv.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\corner.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\filter.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\filter.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\filterengine.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\fixedpoint.inl.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\hal_replacement.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\imgwarp.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\median_blur.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\morph.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\precomp.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\sumpixels.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\sumpixels.avx512_skx.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\smooth.simd.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\src\resize.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\accumulate.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\bilateral.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\blend_linear.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\boxFilter.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\boxFilter3x3.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\calc_back_project.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\canny.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\clahe.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\color_hsv.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\color_lab.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\color_rgb.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\color_yuv.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\corner.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\covardata.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filter2D.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filter2DSmall.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filterSepCol.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filterSepRow.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filterSep_singlePass.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\filterSmall.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\gaussianBlur3x3.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\gaussianBlur5x5.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\gftt.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\histogram.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\hough_lines.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\integral_sum.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\laplacian3.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\laplacian5.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\linearPolar.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\logPolar.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\match_template.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\medianFilter.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\moments.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\morph.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\morph3x3.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\precornerdetect.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\pyramid_up.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\pyr_down.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\pyr_up.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\remap.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\resize.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\sepFilter3x3.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\threshold.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\warp_affine.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\warp_perspective.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+    <None Include="..\..\..\..\ext\opencv\modules\imgproc\src\opencl\warp_transform.cl">
+      <Filter>src\opencl\kernels</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{129C6933-272F-3915-A006-88129EA2EDA5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2">
+      <UniqueIdentifier>{6F418F29-0E5C-3ACA-86A0-A04DD754ACF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\imgproc">
+      <UniqueIdentifier>{FE52112E-492B-3275-A8CD-36E3F370025E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\imgproc\detail">
+      <UniqueIdentifier>{D8AED1AE-F925-357C-83F3-09C6F80A40AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\imgproc\hal">
+      <UniqueIdentifier>{E6427284-4D59-3D25-AF2A-DE7308EB975D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{EAFB9E29-2A12-3733-9298-EFD4D8EF8394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl">
+      <UniqueIdentifier>{40592F2F-5C10-3CD3-88B0-49A8DA4C7A13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl\kernels">
+      <UniqueIdentifier>{B18A7A2D-35DA-3198-9567-4B578E1E0901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl\kernels\autogenerated">
+      <UniqueIdentifier>{18D90B78-EB25-3CA6-8AF1-3B294FD25841}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

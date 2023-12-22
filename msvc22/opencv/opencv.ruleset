@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="OpenCV" Description="OpenCV build by zSpace" ToolsVersion="17.0">
+  <Include Path="nativerecommendedrules.ruleset" Action="Default" />
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C26439" Action="Hidden" />
+    <Rule Id="C26451" Action="Hidden" />
+    <Rule Id="C26454" Action="Hidden" />
+    <Rule Id="C26495" Action="Hidden" />
+    <Rule Id="C26498" Action="Hidden" />
+    <Rule Id="C26812" Action="Hidden" />
+    <Rule Id="C28182" Action="Hidden" />
+    <Rule Id="C28251" Action="Hidden" />
+    <Rule Id="C6001" Action="Hidden" />
+    <Rule Id="C6011" Action="Hidden" />
+    <Rule Id="C6201" Action="Hidden" />
+    <Rule Id="C6255" Action="Hidden" />
+    <Rule Id="C6262" Action="Hidden" />
+    <Rule Id="C6263" Action="Hidden" />
+    <Rule Id="C6269" Action="Hidden" />
+    <Rule Id="C6290" Action="Hidden" />
+    <Rule Id="C6294" Action="Hidden" />
+    <Rule Id="C6297" Action="Hidden" />
+    <Rule Id="C6305" Action="Hidden" />
+    <Rule Id="C6385" Action="Hidden" />
+    <Rule Id="C6386" Action="Hidden" />
+    <Rule Id="C6387" Action="Hidden" />
+  </Rules>
+</RuleSet>

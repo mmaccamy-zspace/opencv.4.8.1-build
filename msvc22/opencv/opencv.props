@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(Directory);%(Directory)..;%(Directory)..\..;$(ProjectDir);$(SolutionDir)..\ext\opencv\modules\calib3d\include;$(SolutionDir)..\ext\opencv\modules\core\include;$(SolutionDir)..\ext\opencv\modules\dnn\include;$(SolutionDir)..\ext\opencv\modules\features2d\include;$(SolutionDir)..\ext\opencv\modules\flann\include;$(SolutionDir)..\ext\opencv\modules\highgui\include;$(SolutionDir)..\ext\opencv\modules\imgcodecs\include;$(SolutionDir)..\ext\opencv\modules\imgproc\include;$(SolutionDir)..\ext\opencv\modules\ml\include;$(SolutionDir)..\ext\opencv\modules\objdetect\include;$(SolutionDir)..\ext\opencv\modules\videoio\include;$(SolutionDir)..\ext\opencv.contrib\modules\aruco\include;$(SolutionDir)..\ext\opencv.contrib\modules\ccalib\include;$(SolutionDir)opencv;$(SolutionDir)..\ext\opencv\3rdparty\zlib;$(SolutionDir)..\ext\opencv\3rdparty\libpng;$(SolutionDir)..\ext\opencv\3rdparty\libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_VARIADIC_MAX=10;CL_TARGET_OPENCL_VERSION=300;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <PreprocessorDefinitions>$(DefineConstants);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+</Project>

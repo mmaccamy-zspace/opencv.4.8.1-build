@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\detail\gcgraph.hpp">
+      <Filter>include\opencv2\imgproc\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\hal\hal.hpp">
+      <Filter>include\opencv2\imgproc\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\imgproc\include\opencv2\imgproc\hal\interface.h">
+      <Filter>include\opencv2\imgproc\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cvconfig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\opencv2\opencv_modules.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\highgui\src\backend.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\highgui\src\factory.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\highgui\src\plugin_api.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\highgui\src\plugin_wrapper.impl.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\highgui\src\precomp.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\highgui\src\registry.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\ext\opencv\modules\highgui\src\registry.impl.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="opencv_highgui_config.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{129C6933-272F-3915-A006-88129EA2EDA5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2">
+      <UniqueIdentifier>{6F418F29-0E5C-3ACA-86A0-A04DD754ACF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\imgproc">
+      <UniqueIdentifier>{FE52112E-492B-3275-A8CD-36E3F370025E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\imgproc\detail">
+      <UniqueIdentifier>{D8AED1AE-F925-357C-83F3-09C6F80A40AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\imgproc\hal">
+      <UniqueIdentifier>{E6427284-4D59-3D25-AF2A-DE7308EB975D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{EAFB9E29-2A12-3733-9298-EFD4D8EF8394}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\highgui\src\backend.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\highgui\src\roiSelector.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\highgui\src\window.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\ext\opencv\modules\highgui\src\window_w32.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

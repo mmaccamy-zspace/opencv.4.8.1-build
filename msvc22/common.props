@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <PropertyGroup>
+      <OutDir>$(SolutionDir)..\bin\$(Configuration)\</OutDir>
+      <IntDir>$(SolutionDir)..\build\$(Configuration)\$(ProjectName)\</IntDir>
+      <LinkIncremental>false</LinkIncremental>
+    </PropertyGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;WIN32;$(DefineConstants);__TOOLS__="$(VCToolsInstallDir.Replace('\', "/"))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\inc;$(SolutionDir)..\ext;$(SolutionDir)..\ext\opencl;$(ProjectDir)..\res;%(AdditionalIncludeDirectories);$(GeneratedFilesDir)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ConformanceMode>true</ConformanceMode>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <!-- info inline-ing warnings 4710 4711 Spectre Mitigation 5045 -->
+      <DisableSpecificWarnings>4710;4711;5045</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <!-- AVX512 - not universally supported  
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions512</EnableEnhancedInstructionSet>
+      -->
+      <!-- For older/cheaper CPUs remove or replace with:  
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      -->
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)../inc;$(ProjectDir)../res;$(IntDir)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(DefineConstants);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+	  <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;$(DefineConstants);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;DEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+	  <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;DEBUG;$(DefineConstants);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/NODEFAULTLIB:libcmt %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

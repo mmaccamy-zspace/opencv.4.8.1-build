@@ -6,7 +6,7 @@ Microsoft Visual Studio 2022 solution to build the git submodules:
 
 Clone:
 ```
-$ git clone --recursive git@github.com:zspace/system.next.git
+$ git clone --recursive git@github.com:mmaccamy-zspace/opencv.4.8.1-build.git
 ```
 
 Or, if already cloned locally without --recursive:
